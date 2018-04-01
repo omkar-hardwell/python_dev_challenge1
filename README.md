@@ -1,7 +1,9 @@
-python dev challenge #1
+Python dev challenge #1
 =====================================
 
 ## Getting Started
+
+This is the Flask micro-framework + Jinja2 template based application.
 
 ### Installation
 
@@ -41,8 +43,10 @@ on your local instance by running:
 (env) $ python src/app.py
 ```
 
-You will have to access this application just entering following url on browser.
-URL: http://127.0.0.1:5000/
+You will have to access this application just by entering following url on browser.
+```
+URL: http://127.0.0.1:5000/ or http://localhost:5000/
+```
 
 Use .msg file to upload from https://github.com/omkar-hardwell/python_dev_challenge1/tree/master/src/uploads
 
@@ -59,8 +63,15 @@ Note: Test cases are pending for this application.
 
 ### Updating
 
-To install new dependencies.
+To install new dependencies; Add it to requirements.txt then run,
 
 ```bash
 (env) $ pip install -r requirements.txt
 ```
+
+### References
+
+1) http://support.moonpoint.com/languages/python/ExtractMsg/
+2) https://www.youtube.com/watch?v=bxFaa_FNdL4
+3) https://github.com/ibrahimokdadov/upload_file_python
+4) https://msdn.microsoft.com/en-us/library/cc463912(v=exchg.80).aspx
