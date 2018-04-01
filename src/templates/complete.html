@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Details</title>
+</head>
+<body>
+File uploaded!
+<div>
+    <dl>
+        <dt><b>Email Header:</b></dt>
+        <dd><b>Sender email address:</b> {{ message.from }}</dd>
+        <dd><b>Receiver email address:</b> {{ message.to }}</dd>
+        <dd><b>Additional recipients(CC/BCC):</b> {{ message.cc }}</dd>
+    </dl>
+</div>
+<div>
+    <dl>
+        <dt><b>Email Body:</b></dt>
+        <dd><b>Subject of email:</b> {{ message.subject }}</dd>
+        <dd><b>Message:</b> {{ message.body }}</dd>
+        <dd>
+            <b>Attachments:</b>
+            {% for file in message.attachments %}
+                <a href="{{ url_for('static', filename=file) }}">{{ file }}</a>
+            {% endfor %}
+        </dd>
+    </dl>
+</div>
+</body>
+</html>
