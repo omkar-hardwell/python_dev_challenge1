@@ -1,4 +1,4 @@
-Flask==0.11.1
+Flask==0.12.4
 oto==1.0.1
 python-env==1.0.0
 ipython==4.1
